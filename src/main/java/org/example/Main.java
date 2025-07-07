@@ -82,8 +82,6 @@ public class Main {
         square1.setFilled(true);
         System.out.println("\nSquare 1 after setters:");
         System.out.println("Side: " + square1.getSide());
-        System.out.println("Width: " + square1.getWidth());
-        System.out.println("Length: " + square1.getLength());
         System.out.println("Color: " + square1.getColor());
         System.out.println("Is Filled: " + square1.isFilled());
         System.out.println("Area: " + square1.getArea());
