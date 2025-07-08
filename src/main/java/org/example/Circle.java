@@ -22,7 +22,12 @@ public class Circle extends Shape{
     }
 
     public void setRadius(double radius) {
-        this.radius = radius;
+        if (radius < 0) {
+            System.out.println("can't enter a negative radius");
+        } else {
+            this.radius = radius;
+        }
+
     }
 
     public double getArea(){

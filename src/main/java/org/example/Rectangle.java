@@ -29,11 +29,20 @@ public class Rectangle extends Shape {
     }
 
     public void setWidth(double width) {
-        this.width = width;
+        if (width < 0){
+            System.out.println("can't input negative number");
+        }else{
+            this.width = width;
+        }
+
     }
 
     public void setLength(double length) {
-        this.length = length;
+        if (length < 0){
+            System.out.println("can't input negative number");
+        } else {
+            this.length = length;
+        }
     }
 
     public double getArea(){

@@ -17,8 +17,12 @@ public class Square extends Rectangle{
     }
 
     public void setSide(double side){
-        super.setLength(side);
-        super.setWidth(side);
+        if (side < 0){
+            System.out.println("can't input negative side");
+        } else {
+            super.setLength(side);
+            super.setWidth(side);
+        }
     }
 
     @Override
